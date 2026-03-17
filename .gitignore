@@ -1,0 +1,48 @@
+# 构建产物
+cmake-build-debug/
+cmake-build-release/
+build/
+out/
+
+# IDE 配置文件
+.idea/
+.vs/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 编译产物
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# CMake 缓存
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 调试文件
+*.dSYM/
+*.pdb
+*.gch
+
+# 性能测试结果
+benchmarks/results/
+
+# 其他
+tags
+compile_commands.json
