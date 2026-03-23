@@ -5,8 +5,8 @@
 namespace hs_cache{
     /**
      * @brief 缓存接口的抽象基类 定义了所有缓存策略必须实现的通用操作
-     * @tparam key 缓存键的类型
-     * @tparam value 缓存值的类型
+     * @tparam Key 缓存键的类型
+     * @tparam Value 缓存值的类型
      * 
      * */
     template<typename Key, typename Value>
