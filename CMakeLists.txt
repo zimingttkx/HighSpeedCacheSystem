@@ -11,16 +11,9 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic")
 # 头文件搜索路径
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
-# 缓存库
-add_library(hs_cache
-    src/cache.cpp
-    src/lru_cache.cpp
-    src/lfu_cache.cpp
-    src/arc_cache.cpp
-    src/sharded_cache.cpp
-)
-
-target_include_directories(hs_cache PUBLIC
+# 缓存库 (header-only 模板库)
+add_library(hs_cache INTERFACE)
+target_include_directories(hs_cache INTERFACE
     ${PROJECT_SOURCE_DIR}/include
 )
 
