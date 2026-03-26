@@ -25,7 +25,7 @@ private:
 public:
     explicit GhostList(std::size_t capacity) : capacity_(capacity){
         if(capacity == 0){
-            throw std::invalid_argument("幽灵链表容量必须大于0")
+            throw std::invalid_argument("幽灵链表容量必须大于0");
         }
     }
 
@@ -68,7 +68,7 @@ public:
         return ghost_list_.size();
     }
 
-    std::size_t capacity const {
+    std::size_t capacity() const {
         return capacity_;
     }
 
@@ -105,7 +105,7 @@ public:
                                                   lfu_ghost_(total_capacity - partition_)
                                                   {
                                                     if(total_capacity < 2){
-                                                        throw std::invalid_argument("ARC的初始容量至少为2")
+                                                        throw std::invalid_argument("ARC的初始容量至少为2");
                                                     }
                                                   }
     ~ARCCache() override{
