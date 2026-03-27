@@ -62,6 +62,12 @@ cmake ..
 cmake --build .
 ```
 
+## 代码注释规范
+
+本项目注释风格遵循 [Google C++ Style Guide — Comments](https://google.github.io/styleguide/cppguide.html#Comments)。
+
+---
+
 ## 许可证
 
 [MIT](LICENSE)
